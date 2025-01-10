@@ -1,0 +1,446 @@
+/* Allgemeine Stile */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+body {
+    background-color: #b1d299; /* Gewünschte Farbe als Hexcode */
+  }
+
+/* Navigation */
+header {
+    background-color: #FFD700; 
+    background-color: ;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.main-nav ul {
+    list-style-type: none;
+    margin: 20;
+    padding: 20;
+    display: flex;
+}
+
+.main-nav li {
+    margin-left: 15px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+.main-nav a:hover {
+    color: #666;
+}
+
+/* Hero-Bereich */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 650px; /* Höhe des Hero-Bereichs */
+    overflow: hidden;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.hero-text h1 {
+    font-size: 5rem;
+    margin: 0;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin: 10px 0 0;
+}
+
+/* Features */
+.features {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    gap: 30px;
+}
+
+.feature-card {
+    flex-basis: 30%;
+    background-color: #FFD700; 
+    background-color: ;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.feature-card:hover {
+    background-color: #fcd973; /* Etwas dunkler beim Hover */
+    transform: scale(1.05); /* Leicht vergrößert beim Hover */
+}
+
+.feature-card h2 {
+    color: #2c3e50;
+    text-align: center;
+}
+
+/* Vergleichsbereich */
+
+h2 {
+    text-align: center;
+    color: #2c3e50; /* Dunklere Überschrift */
+    margin-bottom: 50px;
+    margin-top: 100px;
+}
+
+.comparison {
+    display: flex;
+    justify-content: space-between; /* Abstand zwischen den Spalten */
+    margin-top: 40px;
+    margin-bottom: 100px;
+    gap: 20px; /* Abstand zwischen den beiden Kästen */
+}
+
+.comparison-column {
+    flex-basis: 48%; /* Jeweils 48% der Breite für die beiden Spalten */
+    background-color: #f9f9f9; /* Heller Hintergrund für die Kästen */
+    padding: 20px; /* Innenabstand für den Inhalt */
+    border-radius: 8px; /* Abgerundete Ecken */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Leichter Schatten */
+    text-align: center;
+}
+
+.comparison-column h3 {
+    color: #2c3e50; /* Dunklere Überschrift */
+    margin-bottom: 15px; /* Abstand zum nächsten Element */
+    text-align: center; /* Zentrierte Überschrift */
+}
+
+.comparison-column ul {
+    list-style-type: none; /* Entfernt Standard-Aufzählungspunkte */
+    padding-left: 0; /* Entfernt den linken Innenabstand */
+}
+
+.comparison-column li {
+    position: relative;
+    padding-left: 20px; /* Platz für das Symbol */
+    margin-bottom: 10px; /* Abstand zwischen den Listenelementen */
+}
+
+.comparison-column {
+    position: relative;
+}
+.comparison {
+    display: flex;
+    justify-content: space-between;
+}
+
+.comparison-column {
+    position: relative;
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.comparison {
+    display: flex;
+    justify-content: space-between;
+}
+
+.comparison-column {
+    position: relative;
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.left-image,
+.right-image {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: auto;
+    max-width: 50%;
+    object-fit: cover;
+}
+
+.left-image {
+    left: 0;
+}
+
+.right-image {
+    right: 0;
+}
+
+.comparison-column h3,
+.comparison-column ul {
+    position: relative;
+    z-index: 1;
+    width: 50%;
+}
+
+.comparison-column h3 {
+    margin-top: 0;
+}
+
+/* Linke Spalte Styling */
+.comparison-column:first-child {
+    text-align: right;
+}
+
+.comparison-column:first-child h3,
+.comparison-column:first-child ul {
+    margin-left: auto;
+    padding-left: 20px;
+}
+
+/* Rechte Spalte Styling */
+.comparison-column:last-child {
+    text-align: left;
+}
+
+.comparison-column:last-child h3,
+.comparison-column:last-child ul {
+    margin-right: auto;
+    padding-right: 20px;
+}
+
+.comparison-column ul {
+    list-style-position: inside;
+    padding-left: 0;
+}
+
+
+
+/* Responsivität */
+@media (max-width: 768px) {
+    .comparison {
+        flex-direction: column; /* Spalten untereinander auf kleinen Bildschirmen */
+    }
+
+    .comparison-column {
+        flex-basis: 100%; /* Spalte nimmt die volle Breite ein */
+        margin-bottom: 20px; /* Abstand zwischen den Spalten */
+    }
+}
+
+.map-and-button-container {
+    width: 100%;
+    max-width: 1200px; /* oder die gewünschte maximale Breite */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .map-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* Seitenverhältnis 16:9 */
+    height: 0;
+    overflow: hidden;
+    margin-bottom: 20px; /* Abstand zwischen Karte und Button */
+  }
+  
+  .map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .cta-button {
+    background-color: #FFD700; /* Gelbe Farbe für den Button */
+    color: #333; /* Dunklere Schriftfarbe */
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 25px; /* Runde Ecken */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Weiche Übergänge */
+  }
+  
+  .cta-button:hover {
+    background-color: #FFC000; /* Etwas dunkler beim Hover */
+    transform: scale(1.05); /* Leicht vergrößert beim Hover */
+  }
+  
+  
+
+
+/* Reviews Section */
+.reviews {
+    margin-top: 100px;
+    padding: 20px;
+    background-color: #fffce6; /* Heller Hintergrund */
+    border-radius: 8px; /* Abgerundete Ecken */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Leichter Schatten */
+}
+
+.reviews h2 {
+    text-align: center;
+    color: #2c3e50; /* Dunklere Überschrift */
+    margin-bottom: 20px;
+}
+
+.review {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px; /* Abgerundete Ecken */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Leichter Schatten */
+    margin-bottom: 20px; /* Abstand zwischen Bewertungen */
+}
+
+.review h3 {
+    color: #2c3e50;
+    font-weight: bold;
+    margin-bottom: 10px; /* Abstand zum Text */
+}
+
+.review p {
+    font-size: 1em; /* Standardgröße für Lesbarkeit */
+    color: #555; /* Etwas helleres Grau für den Text */
+}
+
+.site-footer {
+    background-color: #FFD700; 
+    background-color: ;
+    color: #333;
+    padding: 40px 0 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-section {
+    flex: 1;
+    margin: 0 20px;
+    min-width: 200px;
+  }
+  
+  .footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  
+  .footer-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 8px;
+  }
+  
+  .footer-section a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .footer-section a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #555;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+    }
+    
+    .footer-section {
+      margin-bottom: 30px;
+    }
+  }
+  
+
+/* Responsive Anpassungen */
+@media (max-width: 768px) {
+    .map-section {
+        text-align: center;
+    }
+
+    .reviews {
+        padding: 15px;
+    }
+
+    .review {
+        padding: 15px;
+    }
+
+    .cta-button {
+        font-size: 14px;
+        padding: 10px 20px; /* Etwas kleinere Buttons */
+    }
+}
+
+
+/* Responsivität */
+@media (max-width: 768px) {
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature-card {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+
+    .hero {
+        height: 200px;
+    }
+
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+    }
+}
